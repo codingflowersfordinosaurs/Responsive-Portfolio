@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  position: fixed;
+  z-index: 900;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav li a {
+  color: gray;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.main-nav li.active a {
+  border: 1px solid grey;
+}
+
+.main-nav li a:hover {
+  border: 1px solid grey;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  float: left;
+  margin-right: 200px;
+  align-content: center;
+}
+
+body {
+  font-family: monospace;
+  background-image: url(../Responsive-Portfolio/assets/images/leaves/leaves.png);
+  height: 150vh;
+  background-size: auto;
+  background-position: center;
+  overflow: auto;
+}
+
+.row {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  position: absolute;
+  width: 960px;
+  height: 900px;
+  margin-top: 150px;
+  margin-left: 120px;
+  background-color: darkgray;
+}
+
+h1 {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.break-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.self-pic {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.self-pic img {
+  width: 100%;
+}
+
+p {
+  line-height: 2.5;
+  font-weight: 500;
+  font-size: larger;
+  margin-left: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero2 {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  margin-top: 150px;
+  margin-left: 200px;
+  background-color: darkgray;
+}
+
+/* --------------------- START OF CONTACT HTML CSS --------------------- */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizonally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+}
+
+/* when moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  background-color: #f2f2f2;
+  padding: 20px 0 121px 0;
+  margin-left: 0px;
+  margin-right: 20px;
+  width: 100%;
+}
+
+/* ------------------- END OF CONTACT HTML CSS ----------------- */
+
+
+.hero3 {
+  position: absolute;
+  width: 800px;
+  height: 1000px;
+  margin-top: 150px;
+  margin-left: 200px;
+  background-color: darkgrey;
+}
+
+/* --------------- START OF PORTFOLIO HTML CSS ----------------- */
+/* Add padding BETWEEN each column (if you want) */
+.container3 {
+  background-color: #f2f2f2;
+  padding: 20px 0 121px 0;
+  margin-left: 0px;
+  margin-right: 20px;
+  width: 100%;
+  height: 900px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/*Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.row .column .content {
+  background-color: teal;
+  color: white;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+/* -------------------------- END OF PORTFOLIO HTML CSS ------------------------------- */
+
+.footer {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  height: 50px;
+  color: #fff;
+  align-content: center;
+}
+
+/* Media Queries @980 */
+@media screen and (max-width:980px) {
+  header, header .main, header .row, header .main-nav, header .logo, .break-line, .self-pic, .hero p, .hero, .container3, .container3 h1, .container3 .break-line, .container3 .row, .container3 .column {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  /* header {
+    padding-bottom: 20px;
+  } */
+  .hero, .hero2, .hero3 {
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  header .main-nav, header .row, header .main-nav li, header .logo, .break-line, .self-pic, .hero p, .hero, .container3, .container3 h1, .container3 .break-line, .container3 .row, .container3 .column {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* header {
+    padding-bottom: 20px;
+  } */
+
+  .hero, .hero2, .hero3 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header, header .main, header .row, header .main-nav, header .logo, .break-line, .self-pic, .hero p, .hero, .container3, .container3 h1, .container3 .break-line, .container3 .row, .container3 .column {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  /* header {
+    padding-bottom: 20px;
+  } */
+  .hero, .hero2, .hero3 {
+    margin-top: 20px;
+  }
+}
