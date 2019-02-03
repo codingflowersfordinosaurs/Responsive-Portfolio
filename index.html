@@ -4,46 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW1</title>
-    <link rel="stylesheet" href="../Responsive-Portfolio/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Louie</title>
 </head>
 
 <body>
+
     <header>
-        <div class="row">
-
-            <div class="logo">
-                <img src="../Responsive-Portfolio/assets/images/logo.png" style="max-width:100%; height:auto;">
-            
-
-            <ul class="main-nav">
-                <li class="active"><a href="../Responsive-Portfolio/index.html">About</a></li>
-                <li><a href="../Responsive-Portfolio/portfolio.html">Portfolio</a></li>
-                <li><a href="../Responsive-Portfolio/contact.html">Contact</a></li>
-            </ul>
+        <div class="container">
+            <div id="logo">
+                <h1>Louie</h1>
             </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="./index.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <h1>About Me</h1>
-        <div class="break-line"></div>
-        <br>
-        <div class="self-pic">
-            <img src="../Responsive-Portfolio/assets/images/self-pic.png" alt="Picture of Louie" style="max-width:100%; height:auto">
+    <section id="showcase">
+        <div class="container">
+            <img id="self-pic" src="./assets/images/self-pic.jpg" alt="Picture of Louie" style="max-width:100%; height:auto">
+            <h1>About Me</h1>
+            <p>A full-stack coder in the making at Columbia University- Engineering Intensive Coding Bootcamp, preparing myself to start a new career!</p>
+            <p>When I have free time, I am teaching myself Chinese, taking care of my plants and learning more about the specifics of optimal plant are, and taking photos of my plants.</p>
         </div>
-        <p>A full-stack coder in the making at Columbia University- Engineering Intensive Coding Bootcamp, preparing myself to start a new career!</p>
-        <br>
-        <p>When I have free time, I am teaching myself Chinese, taking care of my plants and learning more about the specifics of optimal plant are, and taking photos of my plants and of places I travel to. Even more rare moments, I will find myself at the gym trying to work off all of the food I've eaten(especially hot pot)!</p>
-        <br><br><br>
-        <p>Other interests I have (that are not coding related) are: watching movies, Netflix, reading Fiction (sometimes non-fiction and biographies), eating and trying lots of food, and going to the gym to sit on a stationary bike, so I can watch movies!</p>
-        <br><br><br>
-        <p>I am kind. I am smart. I am important. Hire Me.</p>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to My Life</h1>
+            <form>
+                <input type="email" placeholder="example@email.com">
+                <button type="submit" class="button1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSF01KKqTWlLygs25WpIQ55nUyx9eihb4qY6cmCRgJC0Csnp9j" alt="exercising avocado">
+                <h3>Exercise and Semi-Healthy Eating</h3>
+                <p>Working on my fitness</p>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAq5TNeisQ6p-ibQV0SmgzDBnPqkbcMqLkqMtr82Isvc_eZtWYOQ" alt="philodendron good vibes">
+                <h3>Good Vibes</h3>
+                <p>Good vibes with my plant friends</p>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcfsXETWYXSzkMiSo-dkOjTP5CndvnNeV8YqU9LNr9bWPedKs">
+                <h3>Buddies</h3>
+                <p>Buddies are nice</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <div class="footer-top"></div>
-        <div class="footer">2019©</div>
+        <p>Louie©2019</p>
     </footer>
 
 </body>

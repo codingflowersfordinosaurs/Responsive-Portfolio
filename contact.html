@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW1</title>
-    <link rel="stylesheet" href="../Responsive-Portfolio/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Louie</title>
 </head>
 
 <body>
+
     <header>
-            <div class="row">
-        
-                <div class="logo">
-                    <img src="../Responsive-Portfolio/assets/images/logo.png" style="max-width:100%; height:auto;">
-                    
-        
-                <ul class="main-nav">
-                    <li><a href="../Responsive-Portfolio/index.html">About</a></li>
-                    <li><a href="../Responsive-Portfolio/portfolio.html">Portfolio</a></li>
-                    <li class="active"><a href="../Responsive-Portfolio/contact.html">Contact</a></li>
-                </ul>
-                </div>
+        <div class="container">
+            <div id="logo">
+                <h1>Louie</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li class="active"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero2">
-        <div class="container">
+    <section>
+        <div class="container contact">
+            <div class="container">
+                <h1 id="contact">Contact</h1>
+                <div class="break-line"></div>
+            </div>
 
-            <h1>Contact</h1>
-            <div class="break-line"></div>
-
-            <br>
-
-            <lable for="name">Name</label>
-            <input type="text" class="name" name="full-name" placeholder="John Smith">
-
-            <lable for="email">Email</lable>
-            <input type="text" class="email" name="email-address" placeholder="example@gmail.com">
-            
-            <lable for="message">Message</lable>
-            <textarea id="message"  name="message" placeholder="Write you message here!"></textarea>
-            
+            <div class="form">
+                <label for="name" id="name">Name</label>
+                <input type="text" class="name" name="full-name" placeholder="John Smith">
+            </div>
+            <div class="form">
+                <label for="email" id="email">Email</label>
+                <input type="text" class="email" name="email-address" placeholder="example@gmail.com">
+            </div>
+            <div class="form">
+                <label for="message" id="message">Message</label>
+                <textarea id="message"  name="message" placeholder="Write you message here!"></textarea>
+            </div>
         </div>
+
         <input type="submit" class="btn" value="Submit">
     </section>
 
     
 
     <footer>
-        <div class="footer-top"></div>
-        <div class="footer">2019©</div>
+        <p>Louie©2019</p>
     </footer>
-
+    
 
 </body>
 </html>

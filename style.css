@@ -1,249 +1,225 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
-header {
-  position: fixed;
-  z-index: 900;
-  width: 100vw;
-  display: flex;
-  text-align: center;
-  background-color: #fff;
-}
-
-.main-nav {
-  float: right;
-  list-style: none;
-  margin-top: 30px;
-  margin-left: 200px;
-}
-
-.main-nav li {
-  display: inline-block;
-}
-
-.main-nav li a {
-  color: gray;
-  text-decoration: none;
-  padding: 5px 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 15px;
-}
-
-.main-nav li.active a {
-  border: 1px solid grey;
-}
-
-.main-nav li a:hover {
-  border: 1px solid grey;
-}
-
-.logo img {
-  width: 150px;
-  height: auto;
-  float: left;
-  margin-right: 200px;
-  align-content: center;
-}
-
 body {
-  font-family: monospace;
-  background-image: url(../Responsive-Portfolio/assets/images/leaves/leaves.png);
-  height: 150vh;
-  background-size: auto;
-  background-position: center;
-  overflow: auto;
-}
-
-.row {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.hero {
-  position: absolute;
-  width: 960px;
-  height: 900px;
-  margin-top: 150px;
-  margin-left: 120px;
-  background-color: darkgray;
-}
-
-h1 {
-  color: grey;
-  text-transform: uppercase;
-  font-size: 50px;
-  text-align: left;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.break-line {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 5px solid #ccc;
-  margin: 1em 0;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 15px;
+  line-height: 1.5;
+  /* font: 15px/1.5, 'Questrial', sans-serif; */
   padding: 0;
-  color: black;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
+  background-image: url(./assets/images/leaves/leaves.png);
 }
-
-.self-pic {
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
-  float: left;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.self-pic img {
-  width: 100%;
-}
-
-p {
-  line-height: 2.5;
-  font-weight: 500;
-  font-size: larger;
-  margin-left: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.hero2 {
-  position: absolute;
-  width: 800px;
-  height: 500px;
-  margin-top: 150px;
-  margin-left: 200px;
-  background-color: darkgray;
-}
-
-/* --------------------- START OF CONTACT HTML CSS --------------------- */
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizonally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  height: 50px;
-}
-
-/* when moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
+/* Global */
 .container {
-  background-color: #f2f2f2;
-  padding: 20px 0 121px 0;
-  margin-left: 0px;
-  margin-right: 20px;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
-/* ------------------- END OF CONTACT HTML CSS ----------------- */
-
-
-.hero3 {
-  position: absolute;
-  width: 800px;
-  height: 1000px;
-  margin-top: 150px;
-  margin-left: 200px;
-  background-color: darkgrey;
-}
-
-/* --------------- START OF PORTFOLIO HTML CSS ----------------- */
-/* Add padding BETWEEN each column (if you want) */
-.container3 {
-  background-color: #f2f2f2;
-  padding: 20px 0 121px 0;
-  margin-left: 0px;
-  margin-right: 20px;
-  width: 100%;
-  height: 900px;
-}
-
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/*Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-.row .column .content {
-  background-color: teal;
-  color: white;
-  border: 0;
+header ul {
   margin: 0;
   padding: 0;
-  width: 100%;
-  margin-top: 10px;
-  text-align: center;
+}
+.button1 {
+  background: #90ee90;
+  border: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #ffffff;
+  height: 38px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.btn {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+/* Header */
+header {
+  background: #6b8e23; 
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #ffffff 3px solid;
+}
+
+header a {
+  color: #ffffff;
   text-decoration: none;
-  display: inline-block;
+  text-transform: uppercase;
   font-size: 16px;
-  border-radius: 12px;
+}
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
 }
 
-/* -------------------------- END OF PORTFOLIO HTML CSS ------------------------------- */
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #logo {
+  float: left;
+  color: #ffffff;
+  padding-left: 10px;
+  font-size: 50px;
+}
+header #logo h1 {
+  margin: 0;
+}
+header nav {
+  float: right;
+  margin-top: 50px;
+}
 
-.footer {
-  background-color: black;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+header .active {
+  border: 1px solid #ffffff;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
   text-align: center;
-  height: 50px;
-  color: #fff;
-  align-content: center;
+  color: gray;
+}
+img {
+  padding-top: 20px;
+}
+#self-pic {
+  float: left; 
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#showcase h1 {
+  margin-top: 20px;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+#showcase p {
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Newsletter */
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #6b8e23;
+}
+#newsletter h1 {
+  float: left;
+  font-size: 40px;
+  color: #ffffff;
+}
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* Boxes */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+#boxes .box img {
+  width: 90px
+}
+
+/* ----- Portfolio ----- */
+section h1 {
+  margin-top: 20px;
+  font-size: 55px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: gray;
+}
+section .break-line {
+  height: 2px;
+  border: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+section .content {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  color: gray;
+}
+
+/* Contact Page */
+section label {
+  font-size: 20px;
+  color: gray;
+} 
+section .contact {
+  width: 100%;
+  margin: auto;
+  color: gray;
+}
+.form {
+  width: 80%;
+  padding: 20px;
+  /* border: 5px solid black; */
+  margin: auto;
+  color: gray;
+}
+section #contact {
+  margin-left: 0;
+  padding-left: 0;
+}
+section .form input {
+  padding-left: 20px;
+  width: 20%;
+}
+.form input[type="text"],
+.form textarea {
+  padding: 15px 5px;
+  box-sizing: border-box;
+  width: 100%;
+  /* border: 2px solid black; */
+  border-radius: 2px;
+  outline: none;
+}
+section .btn {
+  background: #90ee90;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 5px;
+  cursor: pointer;
+  margin-left: 125px;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  margin-top: 10px; 
+  color:#ffffff;
+  background-color: #6b8e23;
+  text-align: center;
+  font-size: 25px;
 }
 
 /* Media Queries @980 */
 @media screen and (max-width:980px) {
-  header, header .main, header .row, header .main-nav, header .logo, .break-line, .self-pic, .hero p, .hero, .container3, .container3 h1, .container3 .break-line, .container3 .row, .container3 .column {
+  header, header, header .logo, .break-line, .self-pic, .container, .container h1, .container .break-line {
     float: none;
     text-align: center;
     width: 100%;
@@ -258,7 +234,7 @@ input[type=submit]:hover {
 
 
 @media screen and (max-width: 768px) {
-  header .main-nav, header .row, header .main-nav li, header .logo, .break-line, .self-pic, .hero p, .hero, .container3, .container3 h1, .container3 .break-line, .container3 .row, .container3 .column {
+  header, header .logo, .break-line, .self-pic, .container, .container h1, .container .break-line {
     float: none;
     text-align: center;
     width: 100%;
@@ -274,7 +250,7 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 640px) {
-  header, header .main, header .row, header .main-nav, header .logo, .break-line, .self-pic, .hero p, .hero, .container3, .container3 h1, .container3 .break-line, .container3 .row, .container3 .column {
+  header, header .logo, .break-line, .self-pic, .container, .container h1, .container .break-line {
     float: none;
     text-align: center;
     width: 100%;
@@ -285,4 +261,5 @@ input[type=submit]:hover {
   .hero, .hero2, .hero3 {
     margin-top: 20px;
   }
-}
+
+
